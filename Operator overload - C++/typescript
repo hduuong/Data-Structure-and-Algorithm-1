@@ -1,0 +1,48 @@
+Script started on Wed 16 Oct 2013 06:55:53 PM PDT
+]0;hduong@uw1-320-20:~[hduong@uw1-320-20 ~]$ g++[K[K[Kg++ lab2.cpp ins[Ktset.co[Kpp
+intset.cpp:280:2: warning: no newline at end of file
+]0;hduong@uw1-320-20:~[hduong@uw1-320-20 ~]$ valf[Kgrind ./a.out
+==18711== Memcheck, a memory error detector
+==18711== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==18711== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==18711== Command: ./a.out
+==18711== 
+Enter ints for set A:  (-1 to stop)
+3 7 9 -1
+Enter ints for set B:  (-1 to stop)
+3 5 9 12 15 -1
+A = { 3 7 9}
+B = { 3 5 9 12 15}
+
+Compute  C = A + B
+C = { 3 5 7 9 12 15}
+
+Ask if  A == C
+A is not == C
+
+Ask if  A != C
+A is not == C
+
+Compute B - A = { 5 12 15}
+Compute A - B = { 7}
+Compute  D = (A * B) + D
+Before: D = { 5 10 12}    After: D = { 3 5 9 10 12}
+
+Test assignment operators
+X = { 3 5 9 10 12}    Y = { 3 9}
+
+0 not in set
+-1000 not in set
+A not empty
+==18711== 
+==18711== HEAP SUMMARY:
+==18711==     in use at exit: 0 bytes in 0 blocks
+==18711==   total heap usage: 26 allocs, 26 frees, 20,257 bytes allocated
+==18711== 
+==18711== All heap blocks were freed -- no leaks are possible
+==18711== 
+==18711== For counts of detected and suppressed errors, rerun with: -v
+==18711== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 15 from 8)
+]0;hduong@uw1-320-20:~[hduong@uw1-320-20 ~]$ exit
+
+Script done on Wed 16 Oct 2013 06:57:08 PM PDT
